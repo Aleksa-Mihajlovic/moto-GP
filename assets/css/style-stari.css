@@ -1,0 +1,122 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#whole-page{
+    width: 100%;
+    height: 2000px;
+    margin: 0px auto;
+}
+
+.cleaner{
+    clear: both;
+}
+/*Navigacija*/
+#navigation{
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    top: 0px;
+    padding-top: 17px; 
+    
+}
+
+.navigation-wrap{
+    background-color: green;
+    margin: 0px auto;
+    width: 90%;
+    height: 80%;
+    
+
+}
+
+.block{
+    background-color: #fff;
+    height: 90%;
+    width: 200px;
+    float: left;
+    margin-left: 60px;
+}
+/*Kraj navigacije*/
+
+/*Wrap ispod navigacije*/
+#pre-wrap{
+    width: 100%;
+    height: 35px;
+    background-color: blueviolet;
+    
+}
+#pre-wrap-reg ul {
+    list-style-type: none;
+}
+/*Kraj wrap-a ispod navigacije*/
+
+/*Beliki video ili slika*/
+#video{
+    width: 100%;
+    height: 600px;
+    background-color:aquamarine ;
+}
+/*Kraj videa ili slike*/
+
+/* POCETAK news-wrap-a*/
+#news-region{
+    width: 100%;
+    height: 1000px;
+    background-color: chartreuse;
+    padding-top: 100px;
+
+}
+
+.center-text{
+    margin: 0px auto;
+    width: 245px;
+
+}
+.div-text{
+    margin: 0px auto;
+    margin-bottom: 80px;
+
+
+}
+
+#news-wrap{
+    width: 90%;
+    height: 802px;
+    margin: 0px auto;
+    background-color: darkolivegreen;
+}
+
+.news-inner-wrap{
+    width: 95%;
+    height: 250px;
+    float: left;
+    background-color: coral;
+    margin: 9px 35px; /*NE RADI AUTO?*/
+    
+}
+
+.news{
+    width: 30%;
+    height: 200px;
+    float: left;
+    background-color: beige; 
+    margin-right: 20px;
+}
+
+
+
+/*KRAJ news-wrapa*/
+
+
+
+/*Pocetak end-wrap*/
+
+#end-wrap{
+    width: 100%;
+    height: 270px;
+    background-color: black;
+}
+

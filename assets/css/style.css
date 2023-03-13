@@ -1,0 +1,1118 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Varela Round', sans-serif;
+
+}
+
+:root{
+    --LightGray:#fafafa;
+    --DarkGray:#20262d;
+    --RedButton:#c80502;
+    
+}
+
+body{
+    background-color: #dadbe0;
+}
+/*
+#whole-page{
+    width: 100%;
+    height: 2000px;
+    margin: 0px auto;
+}
+*/
+.cleaner{
+    clear: both;
+}
+
+.red-gp{
+    color: var(--RedButton);
+}
+
+/*Navigacija*/
+#navigation{
+    background-color: var(--DarkGray);
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0px;
+    padding-top: 17px; 
+    z-index: 3;
+}
+
+#nav-logo{
+    width: 7%;
+    height: 100%;
+    float: left;
+  
+    padding-left: 10px;
+    padding-top: 5px;
+    
+}
+#nav-logo a{
+    color: white;
+    text-decoration: none;
+}
+
+#nav-logo a h1{
+margin-left: 10px;
+}
+
+#nav-logo a:hover h1{
+    color: red;
+    
+}
+
+#nav-logo a:hover span{
+    color: white;
+    
+}
+
+#search-form{
+    width: 50%;
+    height: 100%;
+    float: left;
+    
+    margin-left: 35px;
+}
+#search-form i,form{
+    display: inline;
+    margin-left: 20px;
+}
+#search-form i{
+    color: white;
+}
+#search-form form input{
+    padding: 5px;
+    border-radius: 5px;
+    width: 90%;
+    height: 70%;
+    outline: none;
+    transition: 1s;
+}
+
+
+#search-form form input:focus{
+    border: 2px solid var(--RedButton);
+    background-color: var(--DarkGray);
+    color: #fff;
+}
+
+#search-form form input:focus::placeholder{
+    color: #fff;
+}
+
+#other-pages{
+    width: 40%;
+    height: 100%;
+    float: right;
+    
+}
+#other-pages ul{
+    list-style-type: none;
+}
+#other-pages ul li{
+    float: left;
+    margin-left: 15px;
+    font-size: 20px;
+    margin-top: 5px;
+}
+#other-pages ul li a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+#other-pages ul li a::after{
+    content: '';
+    position: absolute;
+    background-color: var(--RedButton);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+#other-pages ul li a:hover::after{
+    width: 100%;
+}
+
+#other-pages ul li a:hover{
+    color: #919394;
+}
+#other-pages form select{
+    padding: 3px;
+    border-radius: 3px;
+    
+}
+
+#other-pages ul li a:hover{
+    
+    color: #919394;
+}
+
+/*Kraj navigacije*/
+
+/*Wrap ispod navigacije*/
+#pre-wrap{
+    width: 100%;
+    height: 35px;
+    background-color: #242c30;
+    position: relative;
+    margin-top: 77px;
+    
+}
+#left-block{
+    width: 50%;
+    height: 100%;
+    float: left;
+
+}
+
+#right-block{
+    width: 50%;
+    height: 100%;
+    float: left;
+    
+  
+}
+#left-text{
+    margin-left: 21px;
+    margin-top: 7px;
+    float: left;
+    color: #919394;
+}
+#right-text{
+    margin-right: 10px;
+    margin-top: 10px;
+    padding-right: 15px;
+    float: right;
+    color: #919394;
+}
+
+#right-text ul{
+    list-style-type: none;
+
+}
+#right-text ul li{
+    display: inline;
+    margin-left: 10px;
+    
+}
+
+#right-text ul li a{
+    text-decoration: none;
+    color: #919394;
+    transition: 0.5s;
+}
+
+#right-text ul li a:hover{
+    color: #fff;
+}
+/*Kraj wrap-a ispod navigacije*/
+
+/*Beliki video ili slika*/
+
+#big-picture{
+    width: 100%;
+    height: 650px;
+    background-image: url('../img/big-picture.jpg');
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#big-picture a{
+    color: var(--DarkGray);
+    text-decoration: none;
+}
+
+#big-picture-btn{
+    width: 200px;
+    height: 65px;
+    position: absolute;
+    right: 100px;
+    bottom: 70px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    transition: ease-in-out 0.4s;
+}
+#big-picture-btn p{
+    margin-top: 17px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#big-picture-btn:hover{
+    background-color: var(--RedButton);
+    color: #fff;
+}
+
+/*Kraj videa ili slike*/
+
+
+
+/* POCETAK news-wrap-a*/
+#news-region{
+    width: 100%;
+    height: 1400px;
+    
+    padding-top: 50px;
+
+}
+
+.center-text{
+    margin: 0px auto;
+    width: 411px;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+
+#news-wrap{
+    width: 100%;
+    height: 1200px;
+    margin: 0px auto;
+    background-color: #dadbe0;
+    padding-top: 60px;
+}
+
+.news-inner-wrap{
+    width: 95%;
+    height: 640px;
+    float: left;
+
+    margin: 0px 53px; /*NE RADI AUTO?*/
+    
+}
+
+.news{
+    width: 29.5%;
+    height: 500px;
+    float: left;
+    margin-left: 23px;
+    background-color: #20262d; 
+    margin-right: 20px;
+    border-radius: 5px;
+    /*BOX-SHADOW sa sajta box-shadow generator*/
+    -webkit-box-shadow: 2px 3px 8px -1px rgba(0,0,0,0.57);
+    -moz-box-shadow: 2px 3px 8px -1px rgba(0,0,0,0.57);
+    box-shadow: 2px 3px 8px -1px rgba(0,0,0,0.57);
+}
+
+.news-header{
+    width: 100%;
+    height: 30px;
+    background-color: #20262d;
+    border-radius: 5px 5px 0px 0px;
+}
+.header-text{
+    width: 92%;
+    height: 100%;
+    float: left;
+}
+.header-text p{
+    margin-top: 6px;
+    margin-left: 10px;
+    color: #919394;
+}
+.header-icon{
+    height: 100%;
+    width: 8%;
+    float: left;
+    background-color: var(--RedButton);
+    border-radius: 0px 5px 0px 0px;
+}
+.header-icon i{
+    font-size: 20px;
+    float: right;
+    color: white;
+    margin: 5px 8px;
+    transition: 1s;
+}
+
+.header-icon i:hover{
+    transform: rotate(360deg);
+}
+
+.news-footer{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #f7f9fa;
+
+}
+.news-footer ul{
+    list-style-type: none;
+    line-height: 1.5;
+
+}
+
+.news-footer ul li{
+    margin-top: 10px;
+}
+
+.news-footer ul li:last-of-type{
+    margin-top: 35px;
+    margin-left: 5px;
+
+}
+
+.news-image{
+    width: 100%;
+    height: 250px;
+    position: relative;
+   
+}
+.news-image img{
+    width: 100%;
+    height: 250px;
+    
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: 0.5s;
+}
+.overlay:hover{
+    opacity: 1;
+    /*Bluruje sliku kada se predje preko overlay-a*/
+    backdrop-filter: blur(5px);
+
+}
+.overlay-text{
+    width: 50px;
+    color: #919394;
+    margin: 25% auto;
+
+}
+
+
+
+
+
+/*KRAJ news-wrapa*/
+
+/*POCETAK bannera*/
+
+#banner-wrap{
+    width: 90%;
+    height: 5px;
+    margin: 0px auto;
+    background-color: var(--RedButton);
+}
+
+/*KRAJ bannera*/
+
+/**/
+
+#table-center-text{
+    margin: 50px auto;
+}
+
+#results-region{
+    width: 90%;
+    height: 500px;
+    background-color: var(--LightGray);
+    margin: 0px auto;
+    margin-bottom: 80px;
+    
+}
+
+#results-table{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+#results-table thead{
+    color: #fff;
+    height: 50px;
+    background-color: var(--DarkGray);
+}
+
+#results-table tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+#results-table tbody tr:last-of-type{
+    border-bottom: 2px solid var(--DarkGray);
+}
+#results-table tbody tr:hover{
+    background-color: #e2e2e2;
+}
+
+/**/ 
+
+
+/*Pocetak end-wrap*/
+
+#end-wrap{
+    width: 100%;
+    height: 300px;
+    background-color: var(--DarkGray);
+    padding-top: 50px;
+}
+
+#footer-wraper{
+    width: 90%;
+    height: 90%;
+    margin: 0px auto;
+    
+   
+}
+
+#footer-section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+   
+
+}
+
+#footer-section article{
+    display: flex;
+    width: 30%;
+    height: 90%;
+    flex-direction: column;
+}
+
+#logo-and-text,#footer-contact{
+    margin-left: 150px;
+}
+
+#footer-logo{
+    width: 40%;
+    height: 25%;
+    margin: 10px auto;
+
+
+}
+
+#footer-logo a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    
+
+}
+
+#footer-logo a:hover h1{
+    color: red;
+    
+}
+
+#footer-logo a:hover span{
+    color: white;
+    
+}
+
+#logo-and-text p{
+    color: #fff;
+    text-align: center;
+    margin-top: 35px;
+}
+
+#footer-logo-icons{
+    padding-top: 32px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+#footer-logo-icons i a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#footer-logo-icons i{
+    color: #fff;
+    margin-left: 15px;
+}
+
+#footer-logo-icons i:hover{
+    color: #919394;
+    
+}
+/*Footer navigation*/
+#footer-navigation div{
+    text-align: center;
+}
+
+#footer-navigation div h3{
+    color: #fff;
+}
+
+#footer-navigation div h3::after {
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: white;
+    display: block;
+    margin: 10px auto 30px;
+}
+
+#footer-navigation ul{
+    list-style-type: none;
+}
+#footer-navigation ul li{
+    text-align: center;
+    margin-top: 25px;
+}
+#footer-navigation ul li a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    
+}
+
+#footer-navigation ul li a::after{
+    content: '';
+    position: absolute;
+    background-color: var(--RedButton);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+#footer-navigation ul li a:hover::after{
+    width: 100%;
+}
+
+#footer-navigation ul li a:hover{
+    color: #919394;
+}
+
+/*footer contact*/
+#footer-contact div{
+    text-align: center;
+}
+
+#footer-contact div h3{
+    color: white;
+}
+
+#footer-contact div h3::after {
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: white;
+    display: block;
+    margin: 10px auto 30px;
+}
+#footer-contact form input{
+    display: block;
+}
+
+#footer-email-input{
+    width: 70%;
+    height: 30%;
+
+}
+
+#footer-comment-input{
+    width: 100%;
+    height: 70%;
+    margin-top: 15px;
+}
+
+#footer-email-input,#footer-comment-input{
+    border-radius: 5px;
+    border: 1px solid black;
+    padding-left: 5px;
+}
+
+#footer-submit-btn{
+    padding: 5px;
+    border: 0px;
+    border-radius: 3px;
+    margin-top: 15px;
+    transition: 0.5s;
+    background-color: var(--RedButton);
+    color: #fff;
+    cursor: pointer;
+}
+#footer-submit-btn:hover{
+    opacity: 0.8;
+}
+
+
+/*----------------------------- ODAVDE KRECE TICKETS STRANICA --------------------------------*/
+
+
+#tickets-region{
+    width: 100%;
+    height: 1500px;
+}
+
+.tickets-country{
+    width: 100%;
+    height: 500px;
+    background-color: #dadbe0;
+    box-shadow: inset 0px 0px 13px -4px rgba(0,0,0,0.87);
+}
+
+#second-tickets-country{
+    background-color: var(--DarkGray);
+    color: #fff;
+    box-shadow: 0px 0px 13px -1px rgba(0,0,0,0.87);
+    
+}
+
+#second-tickets-country .ticket-place{
+    color: var(--DarkGray);
+}
+
+#second-tickets-country .left-content-card{
+    background-color: #dadbe0;
+}
+
+#second-ticket-margin-left{
+    padding-top: 70px;
+    margin-left: 100px;
+    line-height: 30px;
+    text-align:justify;
+}
+
+#second-tickets-country .card-header,.card-text-box{
+    margin-right: 0px;
+} 
+
+
+
+.left-content{
+    width: 40%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+
+
+}
+
+.left-content-card{
+    width: 49.2%;
+    height: 93%;
+    float: left;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.left-content-card:hover{
+    
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.50);
+
+}
+
+.right-content{
+    width: 60%;
+    height: 100%;
+    float: left;
+    animation: hiddenText;
+    animation-duration: 3s;
+}
+
+.right-content .first-and-last-country{
+    padding-top: 70px;
+    padding-right: 30px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.tickets-reg-img{
+    width: 300px;
+    height: 250px;
+
+    position: relative;
+    
+}
+
+#first-ticket-img{
+    background-image: url('../img/spain-race-track.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#second-ticket-img{
+    background-image: url('../img/austria-race-track.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#third-ticket-img{
+    background-image: url('../img/japan-race-track.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.small-flag-img{
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    bottom: -13px;
+    left: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    transition: ease-in 0.8s;
+}
+
+.left-content-card:hover .small-flag-img{
+
+    left: 240px;
+    
+}
+
+.left-content-card a{
+    color: #fff;
+    text-decoration: none;
+}
+.small-flag-img img{
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.buy-ticket-btn{
+    width: 200px;
+    height: 50px;
+    background-color: var(--DarkGray);
+    color: #fff;
+    border-radius: 5px;
+}
+
+.buy-ticket-btn:hover{
+    opacity: 0.95;
+}
+
+.pass-btn{
+    width: 200px;
+    height: 50px;
+    background-color: var(--RedButton);
+    color: #fff;
+    border-radius: 5px;
+}
+.pass-btn:hover{
+    opacity: 0.8;
+}
+
+.buy-ticket-btn,.pass-btn{
+    margin-top: 10px;
+    text-align: center; 
+}
+
+.buy-ticket-btn p{
+    margin-top: 15px;
+    padding-top: 15px;
+}
+.pass-btn p{
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+
+.ticket-place{
+    width: 90%;
+    text-align: left;
+    margin-top: 30px
+}
+
+.ticket-date{
+    width: 90%;
+    text-align: left;
+    margin-top: 10px;
+    color: var(--RedButton);
+}
+
+.card-header{
+    width: 90%;
+    height: 20%;
+}
+
+.card-text-box{
+    width: 90%;
+    height: 80%;
+    
+}
+
+.card-text-box p{
+margin-top: 35px;
+}
+
+
+/* -------------------------------------- ODAVDE KRECE GPpass STRANICA ------------------------------------------*/
+
+
+
+#form-region{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#form-block{
+    width: 70%;
+    height: 85%;
+    background-color:var(--DarkGray) ;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    display: flex;
+    overflow: hidden;
+
+}
+
+.form-block-l-r{
+    width: 50%;
+    height: 100%;
+    
+    
+}
+
+#form-features{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--DarkGray);
+    /*border-right: 1px solid #919394; */
+}
+
+.features-block{
+    width: 70%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    animation: textSlide;
+    animation-duration: 2s;
+
+}
+
+.feature-icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid var(--RedButton);
+    transition: 1s;
+}
+
+.feature-icon:hover{
+    transform: rotate(360deg);
+    border: solid var(--DarkGray);
+}
+
+.feature-icon:hover i{
+    color: var(--RedButton);
+    font-size: 40px;
+}
+
+.feature-icon i{
+    font-size: 30px;
+    color: #fff;
+    margin-left: 14px;
+    margin-top: 11px;
+    transition: 1.2s;
+}
+
+
+
+.feature-text{
+    text-align: center;
+    color: #fff;
+    line-height: 25px;
+}
+
+#last-two-feature-margine-t{
+    border-top: 1px solid #fff;
+}
+
+.feature-icon #third-feature-icon{
+    font-size: 25px;
+    margin-left: 12px;
+    margin-top: 13px;
+}
+
+#GPpass-form-header{
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    height: 15%;
+    margin-top: 50px;
+}
+
+#GPpass-form-header h1,h2{
+    margin-top: 20px;
+}
+
+#right-form-block{
+    box-shadow: inset 10px 10px 42px -3px rgba(0,0,0,0.39);
+}
+
+#GPpass-input-form{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#GPpass-input-form-box{
+    width: 80%;
+    height: 80%;
+
+}
+
+.text-holder{
+    display: block;
+    border: 0px;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    transition: 0.1s;
+    color: #fff;
+    outline: none;
+    width: 100%;
+    height: 30px;
+    margin-top: 15px;
+
+}
+
+#GPpass-input-form input:focus{
+    border-bottom: solid var(--RedButton);
+ }
+
+
+
+
+ .GPpass-btns{
+    display: inline;
+    width: 70px;
+    height: 35px;
+    background-color: var(--RedButton);
+    color: #fff;
+    border: 0px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 20px;
+    transition: 0.5s;
+    margin-top: 30px;
+    cursor: pointer;
+ }
+
+ .GPpass-btns:hover{
+    opacity: 0.7;
+ }
+
+/* -------------------------------------- ODAVDE KRECE About Autor STRANICA ------------------------------------------*/
+#about-autor-wrap-region{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-autor-region{
+    width: 80%;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.about-autor-lr-box{
+    width: 50%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#my-picture{
+    width: 80%;
+    height: 90%;
+    background-image: url('../img/myPicture.jpg');
+    background-size: cover;
+    transition: 1s;
+}
+
+#my-picture:hover{
+
+    background-image: url('../img/helmetOnPicture.jpg');
+    background-size: cover;
+}
+
+#text-about-me{
+    width: 100%;
+    height: 100%;
+}
+
+#text-about-me h1{
+    margin-top: 100px;
+}
+#text-about-me p{
+    margin-top: 30px;
+    width: 90%;
+    line-height: 30px;
+    text-align: justify;
+}
+#text-about-me ul{
+    list-style-type: none;
+    margin-top: 50px;
+}
+
+#text-about-me ul li:last-of-type{
+    margin-top: 136px;
+    margin-left: 510px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+/* -------------------------------------- ANIMACIJE------------------------------------------*/
+
+
+@keyframes textSlide {
+    from{
+        margin-right: 300px;
+        opacity: 0;
+    }
+    to{
+        margin-right: 0px;
+        opacity: 1;
+    }   
+}
+
+@keyframes hiddenText {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }   
+}
