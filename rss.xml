@@ -2,17 +2,17 @@
     <channel>
         <item>
             <title>MotoGP News</title>
-            <link></link>
+            <link>https://moto-gp.vercel.app/index.html</link>
             <description>Catch up the latest news form the MotoGP world!</description>
         </item>
         <item>
             <title>Tickets Shop</title>
-            <link></link>
+            <link>https://moto-gp.vercel.app/tickets.html</link>
             <description>Buy new tickets for next MotoGP race!</description>
         </item>
         <item>
             <title>GPpass</title>
-            <link></link>
+            <link>https://moto-gp.vercel.app/GPpass.html</link>
             <description>New race begin in 1h!</description>
         </item>
     </channel>
