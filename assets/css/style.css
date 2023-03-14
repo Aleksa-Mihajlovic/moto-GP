@@ -616,6 +616,14 @@ margin-left: 10px;
 }
 #footer-contact form input{
     display: block;
+    outline: none;
+    transition: 0.5s;
+}
+
+#footer-contact form input:focus{
+    border: 1px solid var(--RedButton);
+    background-color: var(--DarkGray);
+    color: #fff;
 }
 
 #footer-email-input{
