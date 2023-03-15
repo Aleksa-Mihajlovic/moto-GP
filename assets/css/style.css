@@ -389,6 +389,9 @@ margin-left: 10px;
     background: rgba(0, 0, 0, 0.6);
     opacity: 0;
     transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .overlay:hover{
     opacity: 1;
@@ -397,10 +400,9 @@ margin-left: 10px;
 
 }
 .overlay-text{
-    width: 50px;
+  
     color: #919394;
-    margin: 25% auto;
-
+    font-size: 20px;
 }
 
 
