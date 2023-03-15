@@ -1057,6 +1057,13 @@ margin-top: 35px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    animation: box-border 1s ease-in forwards;
+
+}
+
+@keyframes box-border {
+    from{border: 0px;}
+    to{border: 2px solid var(--RedButton);}
 }
 
 .about-autor-lr-box{
