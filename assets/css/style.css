@@ -1074,6 +1074,8 @@ margin-top: 35px;
     height: 90%;
     background-image: url('../img/myPicture.jpg');
     background-size: cover;
+    box-shadow: 0 3px 30px rgba(0, 0, 0, 0.30);
+    
     transition: 1s;
 }
 
