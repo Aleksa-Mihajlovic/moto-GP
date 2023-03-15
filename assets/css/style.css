@@ -9,7 +9,7 @@
     --LightGray:#fafafa;
     --DarkGray:#20262d;
     --RedButton:#c80502;
-    
+    --White:#fff;
 }
 
 body{
@@ -96,11 +96,11 @@ margin-left: 10px;
 #search-form form input:focus{
     border: 2px solid var(--RedButton);
     background-color: var(--DarkGray);
-    color: #fff;
+    color: var(--White);
 }
 
 #search-form form input:focus::placeholder{
-    color: #fff;
+    color: var(--White);
 }
 
 #other-pages{
@@ -215,7 +215,7 @@ margin-left: 10px;
 }
 
 #right-text ul li a:hover{
-    color: #fff;
+    color: var(--White);
 }
 /*Kraj wrap-a ispod navigacije*/
 
@@ -242,7 +242,7 @@ margin-left: 10px;
     position: absolute;
     right: 100px;
     bottom: 70px;
-    background-color: #fff;
+    background-color: var(--White);
     text-align: center;
     border-radius: 5px;
     transition: ease-in-out 0.4s;
@@ -255,7 +255,7 @@ margin-left: 10px;
 
 #big-picture-btn:hover{
     background-color: var(--RedButton);
-    color: #fff;
+    color: var(--White);
 }
 
 /*Kraj videa ili slike*/
@@ -446,7 +446,7 @@ margin-left: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 #results-table thead{
-    color: #fff;
+    color: var(--White);
     height: 50px;
     background-color: var(--DarkGray);
 }
@@ -511,7 +511,7 @@ margin-left: 10px;
 }
 
 #footer-logo a{
-    color: #fff;
+    color: var(--White);
     text-decoration: none;
     font-size: 30px;
     
@@ -529,7 +529,7 @@ margin-left: 10px;
 }
 
 #logo-and-text p{
-    color: #fff;
+    color: var(--White);
     text-align: center;
     margin-top: 35px;
 }
@@ -542,11 +542,11 @@ margin-left: 10px;
 
 #footer-logo-icons i a{
     text-decoration: none;
-    color: #fff;
+    color: var(--White);
 }
 
 #footer-logo-icons i{
-    color: #fff;
+    color: var(--White);
     margin-left: 10px;
 }
 
@@ -560,7 +560,7 @@ margin-left: 10px;
 }
 
 #footer-navigation div h3{
-    color: #fff;
+    color: var(--White);
 }
 
 #footer-navigation div h3::after {
@@ -631,7 +631,7 @@ margin-left: 10px;
 #footer-contact form input:focus{
     border: 1px solid var(--RedButton);
     background-color: var(--DarkGray);
-    color: #fff;
+    color: var(--White);
 }
 
 #footer-email-input{
@@ -659,7 +659,7 @@ margin-left: 10px;
     margin-top: 15px;
     transition: 0.5s;
     background-color: var(--RedButton);
-    color: #fff;
+    color: var(--White);
     cursor: pointer;
 }
 #footer-submit-btn:hover{
@@ -684,7 +684,7 @@ margin-left: 10px;
 
 #second-tickets-country{
     background-color: var(--DarkGray);
-    color: #fff;
+    color: var(--White);
     box-shadow: 0px 0px 13px -1px rgba(0,0,0,0.87);
     
 }
@@ -729,7 +729,7 @@ margin-left: 10px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: #fff;
+    background-color: var(--White);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     overflow: hidden;
     border-radius: 10px;
@@ -798,7 +798,7 @@ margin-left: 10px;
 }
 
 .left-content-card a{
-    color: #fff;
+    color: var(--White);
     text-decoration: none;
 }
 .small-flag-img img{
@@ -812,7 +812,7 @@ margin-left: 10px;
     width: 200px;
     height: 50px;
     background-color: var(--DarkGray);
-    color: #fff;
+    color: var(--White);
     border-radius: 5px;
 }
 
@@ -824,7 +824,7 @@ margin-left: 10px;
     width: 200px;
     height: 50px;
     background-color: var(--RedButton);
-    color: #fff;
+    color: var(--White);
     border-radius: 5px;
 }
 .pass-btn:hover{
@@ -946,7 +946,7 @@ margin-top: 35px;
 
 .feature-icon i{
     font-size: 30px;
-    color: #fff;
+    color: var(--White);
     margin-left: 14px;
     margin-top: 11px;
     transition: 1.2s;
@@ -956,12 +956,12 @@ margin-top: 35px;
 
 .feature-text{
     text-align: center;
-    color: #fff;
+    color: var(--White);
     line-height: 25px;
 }
 
 #last-two-feature-margine-t{
-    border-top: 1px solid #fff;
+    border-top: 1px solid var(--White);
 }
 
 .feature-icon #third-feature-icon{
@@ -972,7 +972,7 @@ margin-top: 35px;
 
 #GPpass-form-header{
     text-align: center;
-    color: #fff;
+    color: var(--White);
     width: 100%;
     height: 15%;
     margin-top: 50px;
@@ -1005,10 +1005,10 @@ margin-top: 35px;
 .text-holder{
     display: block;
     border: 0px;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid var(--White);
     background-color: transparent;
     transition: 0.1s;
-    color: #fff;
+    color: var(--White);
     outline: none;
     width: 100%;
     height: 30px;
@@ -1028,7 +1028,7 @@ margin-top: 35px;
     width: 70px;
     height: 35px;
     background-color: var(--RedButton);
-    color: #fff;
+    color: var(--White);
     border: 0px;
     border-radius: 5px;
     padding: 5px;
@@ -1054,7 +1054,7 @@ margin-top: 35px;
 #about-autor-region{
     width: 80%;
     height: 90%;
-    background-color: #fff;
+    background-color: var(--White);
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     animation: box-border 1s ease-in forwards;
