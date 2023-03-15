@@ -342,7 +342,7 @@ margin-left: 10px;
     transition: 1s;
 }
 
-.header-icon i:hover{
+.header-icon:hover i{
     transform: rotate(360deg);
 }
 
