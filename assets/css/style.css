@@ -1,10 +1,14 @@
 *{
     padding: 0px;
     margin: 0px;
-    font-family: 'Varela Round', sans-serif;
+    font-family: MotoGpFont;
 
 }
 
+@font-face {
+    font-family: MotoGpFont;
+    src: url('../font/Varela_Round/VarelaRound-Regular.ttf');
+}
 :root{
     --LightGray:#fafafa;
     --DarkGray:#20262d;
